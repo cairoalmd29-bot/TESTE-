@@ -1,0 +1,45 @@
+# ===== CHAVES / SEGREDOS — nunca comitar =====
+API PHP/secrets.php
+secrets.php
+
+# ===== DADOS DE RUNTIME (pedidos de clientes, CPF, e-mail, telefone) =====
+# Gerados pelo servidor. Contêm dado pessoal: fora do repositório.
+API PHP/data/order_*.json
+API PHP/data/rl_*.json
+
+# OBS: os settings*.json FICAM no repositório de propósito — eles guardam os
+# preços, nomes de produto e textos do funil. Mantenha o campo
+# gateway.api_key SEMPRE VAZIO neles; a chave vive só no secrets.php.
+
+# ===== LIXO DE SISTEMA OPERACIONAL =====
+.DS_Store
+**/.DS_Store
+__MACOSX/
+__MACOSX/**
+Thumbs.db
+desktop.ini
+
+# ===== BACKUPS / TEMPORÁRIOS =====
+*.bak
+*.old
+*.orig
+*.tmp
+*~
+*.log
+*.zip
+*.rar
+*.7z
+
+# ===== MODO DEV — nunca em produção =====
+dev-mode.js
+*.dev.js
+
+# ===== LOGS DO PHP =====
+error_log
+**/error_log
+php_errorlog
+
+# ===== EDITORES / FERRAMENTAS =====
+.vscode/
+.idea/
+.claude/

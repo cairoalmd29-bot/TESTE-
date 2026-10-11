@@ -1,0 +1,19 @@
+# Mantém LF no repositório e no servidor (a HostGator roda Linux).
+# Sem isso o Git converte para CRLF no Windows e os arquivos podem
+# chegar ao servidor com quebra de linha errada.
+* text=auto eol=lf
+
+# Binários: nunca converter.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.gif  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary
+*.pdf  binary
+*.mp4  binary
+*.zip  binary
